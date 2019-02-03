@@ -585,5 +585,19 @@
 		"f64.reinterpret/i64": {
 			"value": "0xbf"
 		}
+	},
+	"exports": {
+		"function": {
+			"value": "0x00"
+		},
+		"table": {
+			"value": "0x01"
+		},
+		"memory": {
+			"value": "0x02"
+		},
+		"global": {
+			"value": "0x03"
+		}
 	}
 }

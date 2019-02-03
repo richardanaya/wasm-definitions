@@ -114,19 +114,19 @@
 		"select": {
 			"value": "0x1b"
 		},
-		"get_local": {
+		"local.get": {
 			"value": "0x20"
 		},
-		"set_local": {
+		"local.set": {
 			"value": "0x21"
 		},
-		"tee_local": {
+		"local.tee": {
 			"value": "0x22"
 		},
-		"get_global": {
+		"global.get": {
 			"value": "0x23"
 		},
-		"set_global": {
+		"global.set": {
 			"value": "0x24"
 		},
 		"i32.load": {

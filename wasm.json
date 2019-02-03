@@ -599,5 +599,21 @@
 		"global": {
 			"value": "0x03"
 		}
+	},
+  "limits": {
+		"min": {
+			"value": "0x00"
+		},
+		"min_max": {
+			"value": "0x01"
+		}
+	},
+  "mutability": {
+		"immutable": {
+			"value": "0x00"
+		},
+		"mutable": {
+			"value": "0x01"
+		}
 	}
 }

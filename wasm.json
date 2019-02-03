@@ -1,0 +1,587 @@
+{
+	"types": {
+		"i32": {
+			"value": "0x7f"
+		},
+		"i64": {
+			"value": "0x7e"
+		},
+		"f32": {
+			"value": "0x7d"
+		},
+		"f64": {
+			"value": "0x7c"
+		},
+		"anyfunc": {
+			"value": "0x70"
+		},
+		"func": {
+			"value": "0x60"
+		},
+		"empty_block": {
+			"value": "0x40"
+		}
+	},
+	"magic_number": "0x6d736100",
+	"versions": {
+		"1": {
+			"value": "0x01000000"
+		}
+	},
+	"sections": {
+		"custom": {
+			"value": "0x00"
+		},
+		"type": {
+			"value": "0x01"
+		},
+		"import": {
+			"value": "0x02"
+		},
+		"function": {
+			"value": "0x03"
+		},
+		"table": {
+			"value": "0x04"
+		},
+		"memory": {
+			"value": "0x05"
+		},
+		"global": {
+			"value": "0x06"
+		},
+		"export": {
+			"value": "0x07"
+		},
+		"start": {
+			"value": "0x08"
+		},
+		"element": {
+			"value": "0x09"
+		},
+		"code": {
+			"value": "0x0A"
+		},
+		"data": {
+			"value": "0x0B"
+		}
+	},
+	"operators": {
+		"unreachable": {
+			"value": "0x00"
+		},
+		"nop": {
+			"value": "0x01"
+		},
+		"block": {
+			"value": "0x02"
+		},
+		"loop": {
+			"value": "0x03"
+		},
+		"if": {
+			"value": "0x04"
+		},
+		"else": {
+			"value": "0x05"
+		},
+		"end": {
+			"value": "0x0b"
+		},
+		"br": {
+			"value": "0x0c"
+		},
+		"br_if": {
+			"value": "0x0d"
+		},
+		"br_table": {
+			"value": "0x0e"
+		},
+		"return": {
+			"value": "0x0f"
+		},
+		"call": {
+			"value": "0x10"
+		},
+		"call_indirect": {
+			"value": "0x11"
+		},
+		"drop": {
+			"value": "0x1a"
+		},
+		"select": {
+			"value": "0x1b"
+		},
+		"get_local": {
+			"value": "0x20"
+		},
+		"set_local": {
+			"value": "0x21"
+		},
+		"tee_local": {
+			"value": "0x22"
+		},
+		"get_global": {
+			"value": "0x23"
+		},
+		"set_global": {
+			"value": "0x24"
+		},
+		"i32.load": {
+			"value": "0x28"
+		},
+		"i64.load": {
+			"value": "0x29"
+		},
+		"f32.load": {
+			"value": "0x2a"
+		},
+		"f64.load": {
+			"value": "0x2b"
+		},
+		"i32.load8_s": {
+			"value": "0x2c"
+		},
+		"i32.load8_u": {
+			"value": "0x2d"
+		},
+		"i32.load16_s": {
+			"value": "0x2e"
+		},
+		"i32.load16_u": {
+			"value": "0x2f"
+		},
+		"i64.load8_s": {
+			"value": "0x30"
+		},
+		"i64.load8_u": {
+			"value": "0x31"
+		},
+		"i64.load16_s": {
+			"value": "0x32"
+		},
+		"i64.load16_u": {
+			"value": "0x33"
+		},
+		"i64.load32_s": {
+			"value": "0x34"
+		},
+		"i64.load32_u": {
+			"value": "0x35"
+		},
+		"i32.store": {
+			"value": "0x36"
+		},
+		"i64.store": {
+			"value": "0x37"
+		},
+		"f32.store": {
+			"value": "0x38"
+		},
+		"f64.store": {
+			"value": "0x39"
+		},
+		"i32.store8": {
+			"value": "0x3a"
+		},
+		"i32.store16": {
+			"value": "0x3b"
+		},
+		"i64.store8": {
+			"value": "0x3c"
+		},
+		"i64.store16": {
+			"value": "0x3d"
+		},
+		"i64.store32": {
+			"value": "0x3e"
+		},
+		"current_memory": {
+			"value": "0x3f"
+		},
+		"grow_memory": {
+			"value": "0x40"
+		},
+		"i32.const": {
+			"value": "0x41"
+		},
+		"i64.const": {
+			"value": "0x42"
+		},
+		"f32.const": {
+			"value": "0x43"
+		},
+		"f64.const": {
+			"value": "0x44"
+		},
+		"i32.eqz": {
+			"value": "0x45"
+		},
+		"i32.eq": {
+			"value": "0x46"
+		},
+		"i32.ne": {
+			"value": "0x47"
+		},
+		"i32.lt_s": {
+			"value": "0x48"
+		},
+		"i32.lt_u": {
+			"value": "0x49"
+		},
+		"i32.gt_s": {
+			"value": "0x4a"
+		},
+		"i32.gt_u": {
+			"value": "0x4b"
+		},
+		"i32.le_s": {
+			"value": "0x4c"
+		},
+		"i32.le_u": {
+			"value": "0x4d"
+		},
+		"i32.ge_s": {
+			"value": "0x4e"
+		},
+		"i32.ge_u": {
+			"value": "0x4f"
+		},
+		"i64.eqz": {
+			"value": "0x50"
+		},
+		"i64.eq": {
+			"value": "0x51"
+		},
+		"i64.ne": {
+			"value": "0x52"
+		},
+		"i64.lt_s": {
+			"value": "0x53"
+		},
+		"i64.lt_u": {
+			"value": "0x54"
+		},
+		"i64.gt_s": {
+			"value": "0x55"
+		},
+		"i64.gt_u": {
+			"value": "0x56"
+		},
+		"i64.le_s": {
+			"value": "0x57"
+		},
+		"i64.le_u": {
+			"value": "0x58"
+		},
+		"i64.ge_s": {
+			"value": "0x59"
+		},
+		"i64.ge_u": {
+			"value": "0x5a"
+		},
+		"f32.eq": {
+			"value": "0x5b"
+		},
+		"f32.ne": {
+			"value": "0x5c"
+		},
+		"f32.lt": {
+			"value": "0x5d"
+		},
+		"f32.gt": {
+			"value": "0x5e"
+		},
+		"f32.le": {
+			"value": "0x5f"
+		},
+		"f32.ge": {
+			"value": "0x60"
+		},
+		"f64.eq": {
+			"value": "0x61"
+		},
+		"f64.ne": {
+			"value": "0x62"
+		},
+		"f64.lt": {
+			"value": "0x63"
+		},
+		"f64.gt": {
+			"value": "0x64"
+		},
+		"f64.le": {
+			"value": "0x65"
+		},
+		"f64.ge": {
+			"value": "0x66"
+		},
+		"i32.clz": {
+			"value": "0x67"
+		},
+		"i32.ctz": {
+			"value": "0x68"
+		},
+		"i32.popcnt": {
+			"value": "0x69"
+		},
+		"i32.add": {
+			"value": "0x6a"
+		},
+		"i32.sub": {
+			"value": "0x6b"
+		},
+		"i32.mul": {
+			"value": "0x6c"
+		},
+		"i32.div_s": {
+			"value": "0x6d"
+		},
+		"i32.div_u": {
+			"value": "0x6e"
+		},
+		"i32.rem_s": {
+			"value": "0x6f"
+		},
+		"i32.rem_u": {
+			"value": "0x70"
+		},
+		"i32.and": {
+			"value": "0x71"
+		},
+		"i32.or": {
+			"value": "0x72"
+		},
+		"i32.xor": {
+			"value": "0x73"
+		},
+		"i32.shl": {
+			"value": "0x74"
+		},
+		"i32.shr_s": {
+			"value": "0x75"
+		},
+		"i32.shr_u": {
+			"value": "0x76"
+		},
+		"i32.rotl": {
+			"value": "0x77"
+		},
+		"i32.rotr": {
+			"value": "0x78"
+		},
+		"i64.clz": {
+			"value": "0x79"
+		},
+		"i64.ctz": {
+			"value": "0x7a"
+		},
+		"i64.popcnt": {
+			"value": "0x7b"
+		},
+		"i64.add": {
+			"value": "0x7c"
+		},
+		"i64.sub": {
+			"value": "0x7d"
+		},
+		"i64.mul": {
+			"value": "0x7e"
+		},
+		"i64.div_s": {
+			"value": "0x7f"
+		},
+		"i64.div_u": {
+			"value": "0x80"
+		},
+		"i64.rem_s": {
+			"value": "0x81"
+		},
+		"i64.rem_u": {
+			"value": "0x82"
+		},
+		"i64.and": {
+			"value": "0x83"
+		},
+		"i64.or": {
+			"value": "0x84"
+		},
+		"i64.xor": {
+			"value": "0x85"
+		},
+		"i64.shl": {
+			"value": "0x86"
+		},
+		"i64.shr_s": {
+			"value": "0x87"
+		},
+		"i64.shr_u": {
+			"value": "0x88"
+		},
+		"i64.rotl": {
+			"value": "0x89"
+		},
+		"i64.rotr": {
+			"value": "0x8a"
+		},
+		"f32.abs": {
+			"value": "0x8b"
+		},
+		"f32.neg": {
+			"value": "0x8c"
+		},
+		"f32.ceil": {
+			"value": "0x8d"
+		},
+		"f32.floor": {
+			"value": "0x8e"
+		},
+		"f32.trunc": {
+			"value": "0x8f"
+		},
+		"f32.nearest": {
+			"value": "0x90"
+		},
+		"f32.sqrt": {
+			"value": "0x91"
+		},
+		"f32.add": {
+			"value": "0x92"
+		},
+		"f32.sub": {
+			"value": "0x93"
+		},
+		"f32.mul": {
+			"value": "0x94"
+		},
+		"f32.div": {
+			"value": "0x95"
+		},
+		"f32.min": {
+			"value": "0x96"
+		},
+		"f32.max": {
+			"value": "0x97"
+		},
+		"f32.copysign": {
+			"value": "0x98"
+		},
+		"f64.abs": {
+			"value": "0x99"
+		},
+		"f64.neg": {
+			"value": "0x9a"
+		},
+		"f64.ceil": {
+			"value": "0x9b"
+		},
+		"f64.floor": {
+			"value": "0x9c"
+		},
+		"f64.trunc": {
+			"value": "0x9d"
+		},
+		"f64.nearest": {
+			"value": "0x9e"
+		},
+		"f64.sqrt": {
+			"value": "0x9f"
+		},
+		"f64.add": {
+			"value": "0xa0"
+		},
+		"f64.sub": {
+			"value": "0xa1"
+		},
+		"f64.mul": {
+			"value": "0xa2"
+		},
+		"f64.div": {
+			"value": "0xa3"
+		},
+		"f64.min": {
+			"value": "0xa4"
+		},
+		"f64.max": {
+			"value": "0xa5"
+		},
+		"f64.copysign": {
+			"value": "0xa6"
+		},
+		"i32.wrap/f64": {
+			"value": "0xa7"
+		},
+		"i32.trunc_s/f32": {
+			"value": "0xa8"
+		},
+		"i32.trunc_u/f32": {
+			"value": "0xa9"
+		},
+		"i32.trunc_s/f64": {
+			"value": "0xaa"
+		},
+		"i32.trunc_u/f64": {
+			"value": "0xab"
+		},
+		"i64.extend_s/i32": {
+			"value": "0xac"
+		},
+		"i64.extend_u/i32": {
+			"value": "0xad"
+		},
+		"i64.trunc_s/f32": {
+			"value": "0xae"
+		},
+		"i64.trunc_u/f32": {
+			"value": "0xaf"
+		},
+		"i64.trunc_s/f64": {
+			"value": "0xb0"
+		},
+		"i64.trunc_u/f64": {
+			"value": "0xb1"
+		},
+		"f32.convert_s/i32": {
+			"value": "0xb2"
+		},
+		"f32.convert_u/i32": {
+			"value": "0xb3"
+		},
+		"f32.convert_s/i64": {
+			"value": "0xb4"
+		},
+		"f32.convert_u/i64": {
+			"value": "0xb5"
+		},
+		"f32.demote/f64": {
+			"value": "0xb6"
+		},
+		"f64.convert_s/i32": {
+			"value": "0xb7"
+		},
+		"f64.convert_u/i32": {
+			"value": "0xb8"
+		},
+		"f64.convert_s/i64": {
+			"value": "0xb9"
+		},
+		"f64.convert_u/i64": {
+			"value": "0xba"
+		},
+		"f64.promote/f32": {
+			"value": "0xbb"
+		},
+		"i32.reinterpret/f32": {
+			"value": "0xbc"
+		},
+		"i64.reinterpret/f64": {
+			"value": "0xbd"
+		},
+		"f32.reinterpret/i32": {
+			"value": "0xbe"
+		},
+		"f64.reinterpret/i64": {
+			"value": "0xbf"
+		}
+	}
+}

@@ -24,7 +24,7 @@
 	},
 	"constants": {
     "magic_number": {
-			"value": "0x6d736100"
+			"value": "0x0061736d"
 		},
 		"version_1": {
 			"value": "0x01000000"

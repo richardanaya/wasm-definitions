@@ -586,7 +586,7 @@
 			"value": "0xbf"
 		}
 	},
-	"exports": {
+	"import_export": {
 		"function": {
 			"value": "0x00"
 		},
